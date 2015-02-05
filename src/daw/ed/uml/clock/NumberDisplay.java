@@ -1,16 +1,3 @@
-
-/**
- * The NumberDisplay class represents a digital number display that can hold
- * values from zero to a given limit. The limit can be specified when creating
- * the display. The values range from zero (inclusive) to limit-1. If used,
- * for example, for the seconds on a digital clock, the limit would be 60, 
- * resulting in display values from 0 to 59. When incremented, the display 
- * automatically rolls over to zero when reaching the limit.
- * 
- * @author Michael Kölling and David J. Barnes
- * @version 2011.07.31
- */
-
 package daw.ed.uml.clock;
 
 public class NumberDisplay
@@ -24,8 +11,6 @@ public class NumberDisplay
      */
     public NumberDisplay(int rollOverLimit)
     {
-        limit = rollOverLimit;
-        value = 0;
     }
 
     /**
@@ -33,7 +18,6 @@ public class NumberDisplay
      */
     public int getValue()
     {
-        return value;
     }
 
     /**
@@ -43,12 +27,6 @@ public class NumberDisplay
      */
     public String getDisplayValue()
     {
-        if(value < 10) {
-            return "0" + value;
-        }
-        else {
-            return "" + value;
-        }
     }
 
     /**
@@ -57,9 +35,6 @@ public class NumberDisplay
      */
     public void setValue(int replacementValue)
     {
-        if((replacementValue >= 0) && (replacementValue < limit)) {
-            value = replacementValue;
-        }
     }
 
     /**
@@ -68,6 +43,5 @@ public class NumberDisplay
      */
     public void increment()
     {
-        value = (value + 1) % limit;
     }
 }

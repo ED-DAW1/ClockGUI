@@ -4,7 +4,6 @@ public class ClockDisplay
 {
     private NumberDisplay hours;
     private NumberDisplay minutes;
-    private String displayString;    // simulates the actual display
     
     /**
      * Constructor for ClockDisplay objects. This constructor 
@@ -12,6 +11,7 @@ public class ClockDisplay
      */
     public ClockDisplay()
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
@@ -21,14 +21,16 @@ public class ClockDisplay
      */
     public ClockDisplay(int hour, int minute)
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
-
+    
     /**
      * This method should get called once every minute - it makes
      * the clock display go one minute forward.
      */
     public void timeTick()
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
@@ -37,19 +39,25 @@ public class ClockDisplay
      */
     public void setTime(int hour, int minute)
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
      * Return the current time of this display in the format HH:MM.
+     * @return current time
      */
     public String getTime()
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
     
     /**
-     * Update the internal string that represents the display.
+     * @see getTime()
      */
-    private void updateDisplay()
-    {
+    @Override
+    public String toString() {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
+    
+    
 }

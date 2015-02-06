@@ -9,8 +9,9 @@ public class NumberDisplay
      * Constructor for objects of class NumberDisplay.
      * Set the limit at which the display rolls over.
      */
-    public NumberDisplay(int rollOverLimit)
+    public NumberDisplay(int limit)
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
@@ -18,6 +19,7 @@ public class NumberDisplay
      */
     public int getValue()
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
@@ -25,16 +27,19 @@ public class NumberDisplay
      * String. If the value is less than ten, it will be padded with a leading
      * zero).
      */
-    public String getDisplayValue()
+    @Override
+    public String toString()
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
      * Set the value of the display to the new specified value. If the new
      * value is less than zero or over the limit, do nothing.
      */
-    public void setValue(int replacementValue)
+    public void setValue(int value)
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
@@ -43,5 +48,6 @@ public class NumberDisplay
      */
     public void increment()
     {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 }

@@ -41,7 +41,8 @@ public class NumberDisplay
      * String. If the value is less than ten, it will be padded with a leading
      * zero).
      */
-    public String getDisplayValue()
+    @Override
+    public String toString()
     {
         if(value < 10) {
             return "0" + value;

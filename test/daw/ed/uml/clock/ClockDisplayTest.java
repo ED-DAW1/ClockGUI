@@ -35,7 +35,7 @@ public class ClockDisplayTest {
         assertTrue(cd.getTime().equals("20:51"));
         cd.setTime(20,59);
         cd.timeTick();
-        assertTrue(cd.getTime().equals("23:00"));
+        assertTrue(cd.getTime().equals("21:00"));
         cd.setTime(23,59);
         cd.timeTick();
         assertTrue(cd.getTime().equals("00:00"));
